@@ -31,14 +31,9 @@ li {
 	color: #222;
 }
 
-.button:hover {
-	background-color: #6e6e6e;
+.button-pressed {
+	background-color: #7a4444;
 	color: #a9a9a9;
-}
-
-.wrapper {
-	height: 100%;
-	background-color: #F1F3F4;
 }
 
 .header {
