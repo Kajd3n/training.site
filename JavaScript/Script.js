@@ -1,5 +1,6 @@
+/* This code adds a new article element in the content block
 let button = document.querySelector('.button');
-let inContent = document.querySelector('.in-content');
+let inContent = document.querySelector('.-content');
 let counter = 4;
 
 button.onclick = function() {
@@ -18,3 +19,4 @@ button.onclick = function() {
 	
 	inContent.append(article);
 }
+*/
