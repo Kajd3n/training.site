@@ -1,6 +1,6 @@
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	font-size: 20px;
 }
 
@@ -23,11 +23,19 @@ li {
 	list-style: none;
 }
 
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 400px;
+}
+
 .button {
 	margin-top: 10px;
 	padding:  10px;
+	max-height: 25px;
+
 	border: 1px solid #6e6e6e;
 	border-radius: 3px;
+
 	color: #222;
 }
 
@@ -41,20 +49,15 @@ li {
 }
 
 .in-header {
+	display: grid;
+	grid-template-columns: 1fr 150px;
 	height: 80px;
 	padding: 10px;
 	background-color: #a9a9a9;
 }
 
-.content {
-	width: 70%;
-	float: left;
-}
-
 .in-content {
-	min-height: 200px;
-	margin-right: 5px;
-	margin-left: 10px;
+	margin: 10px;
 	padding: 10px;
 	background-color: #a9a9a9;
 }
@@ -73,15 +76,8 @@ li {
 	background-color: #ffffff;
 }
 
-.sidebar {
-	width: 30%;
-	float: left;
-}
-
 .in-sidebar {
-	min-height: 150px;
-	margin-right: 10px;
-	margin-left: 5px;
+	margin: 10px;
 	padding: 10px;
 	background-color: #a9a9a9;
 }
@@ -99,17 +95,3 @@ li {
 	padding: 10px;
 	background-color: #a9a9a9;
 }
-
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-  }
-  .clearfix { display: inline-block; }
-  /* start commented backslash hack \*/
-  * html .clearfix { height: 1%; }
-  .clearfix { display: block; }
-  /* close commented backslash hack */
